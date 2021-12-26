@@ -1,9 +1,25 @@
 
 //the carousel allows the users to "swipe" through images 
-// Get back to this pending idea 
 $(document).ready(function(){
-    $('.slider').slider();
-  });
-//
+   $('.slider').slider();
+});
 
-alert("great pick!")
+const CreateParkEvent=()=>document.getElementById('create-park');
+
+
+// i need to create a node here 
+const attachCreateParkEvent=()=> {
+    CreateParkEvent().addEventListener('click',loadcreatePark);
+
+
+}
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded',function(){
+    attachCreateParkEvent();
+ 
+ })
